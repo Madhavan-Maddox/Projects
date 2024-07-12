@@ -371,18 +371,26 @@ btn.addEventListener('click', async (e) => {
        alert("Please enter a valid amount")
     }
 
+     
     console.log(from.value, to.value);
 
-    let BASE_URL = "https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD";
 
-    // let url = `${BASE_URL}/${from.value.toLowerCase()}/${to.value.toLowerCase()}`;
-    // let get = await fetch(url);
-    // let data = await get.json();
-    // let rate = data[to.value.toLowerCase()];
-    // console.log(rate);
+    let BASE_URL = "https://latest.currency-api.pages.dev/v1/currencies";
 
-    // let para = document.querySelector(".p3");
-    // let finalVal = inputVal * rate ;
-    // para.innerText = `${inputVal} ${from.value} = ${inputVal * rate} ${to.value}`;
+    let url = `${BASE_URL}/${from.value.toLowerCase()}.json`;
+    
+    let get = await fetch(url);
+
+    let data = await get.json();
+   
+    let rate = data[from.value.toLowerCase()][to.value.toLowerCase()];
+
+    console.log(rate);
+
+
+    let para = document.querySelector(".p4");
+    let finalVal = inputVal * rate ;
+    para.innerText = `${inputVal} ${from.value} = ${inputVal * rate} ${to.value}`;
+
     
 });
