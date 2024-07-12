@@ -391,6 +391,6 @@ btn.addEventListener('click', async (e) => {
     let para = document.querySelector(".p4");
     let finalVal = inputVal * rate ;
     para.innerText = `${inputVal} ${from.value} = ${inputVal * rate} ${to.value}`;
-
-    
 });
+
+let
