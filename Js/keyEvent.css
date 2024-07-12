@@ -1,0 +1,27 @@
+nav{
+    width: 100vw;
+    height: 10vh;
+    background-color: aqua;
+}
+.box{
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
+    animation: sc 5s linear delay iteration-count direction fill-mode;
+}
+
+.ball{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    
+}
+
+.canvas{
+
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}

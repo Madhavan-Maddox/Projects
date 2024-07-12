@@ -1,0 +1,49 @@
+body{
+    background: url(./images.jpg);
+    background-size: cover;
+}
+#head{
+    background-color: red;
+}
+
+.h2{
+    background-color: rgb(0, 8, 255);
+}
+
+.name{
+    background-color: aqua;
+}
+
+#heading{
+    background-color: aqua;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.box1{
+    background-color: rgb(185, 134, 39);
+}
+
+.box2{
+    background-color: rgb(0, 170, 249);
+}
+
+.box3{
+    background-color: rgb(37, 184, 37);
+}
+
+.maindiv{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}

@@ -1,0 +1,34 @@
+.but{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aquamarine;
+    gap: 5px;
+}
+.la{
+   width: 4%;
+   height: 20vh;
+   position: absolute;
+   left: 10px;
+}
+.ra{
+    width: 4%;
+    height: 20vh;
+    position: absolute;
+    right: 10px;
+}
+.c4pic{
+    width: 20%;
+    height: 45vh;
+    background-color: blue;
+}
+
+
+.header{
+    width: 100%;
+    height: 4vh;
+    background-color: aquamarine;
+    display: flex;
+}

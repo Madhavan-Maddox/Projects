@@ -1,0 +1,123 @@
+*{
+    font-family: arial;
+    margin: 0%;
+}
+.mainD{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.image{
+    height: 15vh;
+}
+.content{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    border: 0.5px solid rgba(102, 102, 102, 0.3);
+    border-radius: 2.5%;
+    
+}
+.h1{
+    font-weight: 200;
+    margin-bottom: 2%;
+}
+.lable{
+    padding-bottom: 1%;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.input{
+    width: 98%;
+    height: 4vh;
+    margin-bottom: 2%;
+    padding-left: 2%;
+    outline: none;
+}
+.input2{
+    margin-bottom: 7%;
+}
+.division{
+    margin-bottom: 7%;
+}
+.button{
+    width: 100%;
+    height: 5vh;
+    background-color: rgba(255, 217, 4, 0.822);
+    border: 0.4px solid rgba(255, 217, 4, 0.822);
+    border-radius: 5%;
+    
+}
+.text{
+    font-size: 0.8rem;
+    padding-left: 2%;
+}
+.anchor{
+    text-decoration: none;
+    color: #0066c0;
+    font-size: 0.8rem;
+}
+.div-text{
+    margin-top: 7%;
+}
+.ch{
+    padding-left: 2%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+}
+.h5{
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+.button2{
+    width: 100%;
+    height: 5vh;
+    border: 1px solid gray;
+    border-radius: 2%;
+    box-shadow: 0 0 3px gray;
+    margin-top: 3%;
+    background-color: white;
+}
+
+.foot{
+    width: 100%;
+    height: 15vh;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+    box-shadow: 2px 0 5px gray inset;
+}
+.f2{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 3%;
+}
+.text2{
+    font-size: 0.7rem;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: rgba(221, 221, 4, 0.822);
+}
+
+
+.input:hover{
+    outline: none;
+    border: 1px solid #0066c0;
+    box-shadow: 0 0 5px #0066c0;
+}
+
+.button2:hover{
+    background-color: rgb(164, 164, 169);
+}

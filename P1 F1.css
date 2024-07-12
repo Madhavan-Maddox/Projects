@@ -1,0 +1,28 @@
+*{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.m2{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1px;
+    width: 500px;
+    border: 2px solid white;
+}
+.i {
+     height: 50px;
+     padding-top: 30px;
+    
+}
+.i:hover{
+    
+     border: 1px solid white;
+}
+
