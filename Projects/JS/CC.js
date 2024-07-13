@@ -382,6 +382,7 @@ btn.addEventListener('click', async (e) => {
     let get = await fetch(url);
 
     let data = await get.json();
+    console.log(data);
    
     let rate = data[from.value.toLowerCase()][to.value.toLowerCase()];
 
@@ -389,8 +390,7 @@ btn.addEventListener('click', async (e) => {
 
 
     let para = document.querySelector(".p4");
-    let finalVal = inputVal * rate ;
-    para.innerText = `${inputVal} ${from.value} = ${inputVal * rate} ${to.value}`;
+    let finalVal = (inputVal * rate).toFixed(4) ;
+    para.innerText = `${inputVal} ${from.value} = ${finalVal} ${to.value}`;
 });
 
-let
