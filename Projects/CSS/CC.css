@@ -123,6 +123,7 @@ option{
     background-color: #96C9F4;
     opacity: 0.3;
     box-shadow: inset 0px 0px 20px rgba(0,0,0,0.5) ;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 480px) {
@@ -146,3 +147,7 @@ option{
         border-bottom: 2px solid black;
       }
     }
+
+
+
+

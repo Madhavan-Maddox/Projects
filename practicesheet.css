@@ -1,0 +1,69 @@
+/* Style the container */
+.shooting-star {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #333; /* dark background to represent the night sky */
+    overflow: hidden;
+  }
+  
+  /* Style the star */
+  .star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #fff; /* white star */
+    border-radius: 50%;
+    animation: shoot 3s linear infinite;
+  }
+  
+  /* Animation keyframes */
+  @keyframes shoot {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    20% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    80% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, 150%) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  .tail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 20px;
+    background-color: #fff; /* white tail */
+    border-radius: 50%;
+    animation: tail 3s linear infinite;
+    opacity: 0.5; /* make the tail slightly transparent */
+  }
+
+  @keyframes tail {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.5) translateX(100vw);
+      opacity: 0;
+    }
+  }
