@@ -44,16 +44,22 @@ body{
     gap: 1vmax;
 }
 
+.but{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .box{
     width: 18vh ;
     height: 18vh;
     background-color: #e42b56;
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 1vmax;
     box-shadow: 0 0 10px black;
     opacity: 0.5;
@@ -61,14 +67,15 @@ body{
 .box:hover{
     transition: all linear 0.5s;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-.b2{
-    width: 60vh;
+.b2, .b3{
+    width: 30vh;
     height: 8vh;
     background-color: rgb(99, 166, 99);
     border-radius: 2rem;
-    margin-left: 13%;
+    margin-left: 9%;
     font-size: 1.5vmax;
     font-weight: 700;
     border-style: none;
@@ -78,10 +85,36 @@ body{
     
 }
 
-.b2:hover{
+.b2:hover , .b3:hover{
     border-radius: 1rem;
     background: linear-gradient(45deg,rgb(177, 96, 96),rgb(95, 95, 172),rgb(174, 90, 177),rgb(143, 160, 95),rgb(69, 88, 173),rgb(181, 66, 66));
     transition: all linear 1s;
     transform: scale(1.1);
     box-shadow: 0 0 20px black;
+}
+
+.winner{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    display: none;
+}
+.w2{
+    width: 40vh;
+    height: 20vh;
+    background-color: #c597a0;
+    color: black;
+    font-size: 2vmax;
+    font-weight: 700;
+    padding: 2% 1% 0 1%;
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 0px 10px black;
+    
+}
+
+.text{
+    text-shadow: 0px 0px 20px black;
+   
 }
