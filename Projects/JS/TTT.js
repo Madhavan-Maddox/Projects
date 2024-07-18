@@ -13,12 +13,12 @@ boxes.forEach((box) =>{
     if(turnO === true){
         box.innerText = "O";
         box.style.color = "darkgreen";
-        box.classList.add = "text";
+        box.classList.add("text");
         turnO = false;
     } else{
         box.innerText = "X";
         box.style.color = "blue";
-        box.classList.add = "text";
+        box.classList.add("text");
         turnO = true;
     }
     box.disabled = true;
@@ -51,7 +51,7 @@ let boxesEnable = ()=>{
 //    showing winner //
 
 let showWinner = (pos1Val) =>{
-    win.innerText = `Winner is ${pos1Val},Congratulations`;
+    win.innerText = `Winner is "${pos1Val}" \n Congratulations`;
     win.style.display = "block";
     win.classList.add("w2");
     

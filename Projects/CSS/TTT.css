@@ -14,8 +14,6 @@ body{
     background-color: #562745;
     display: flex;
     justify-content: center;
-    
-    
 }
 
 .main{
@@ -102,7 +100,7 @@ body{
 .w2{
     width: 40vh;
     height: 20vh;
-    background-color: #c597a0;
+    background-color: #5fc487;
     color: black;
     font-size: 2vmax;
     font-weight: 700;
@@ -110,11 +108,11 @@ body{
     text-align: center;
     border-left: none;
     border-right: none;
-    box-shadow: 0px 0px 10px black;
-    
+    box-shadow: 0px 0px 20px black;
+    border-radius: 1rem;
 }
 
 .text{
-    text-shadow: 0px 0px 20px black;
-   
+    text-shadow: 10px 10px 30px black;  
 }
+
