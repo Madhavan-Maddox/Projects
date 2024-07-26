@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    margin: 2%;
+    position: relative;
+    width: max-content;
+}
+
+h1::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to right, blue, red, green);
+    transition: all 1s ease-in-out;
+    animation: text 2s linear 2s infinite;
+}
+
+h1:hover::before{
+    width: 100%;
+    cursor: pointer;
+}
+
+h1{
+    background: linear-gradient(to right, red, blue,green);
+    background-clip: text;
+    color: transparent;
+}
